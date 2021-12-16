@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+        <title>Template </title>
+        <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Madeon08">
+        <!-- ============== Resources style ============== -->
+        <link rel="stylesheet" href="css/style-2.css" />
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+		<!-- Modernizr runs quickly on page load to detect features -->
+		<script src="js/modernizr.js"></script>
+	</head>
+	
+	<body>
+
+		<div class="loading-part animated-quick">
+
+			<div class="loader-part opacity-0 animated-quick">
+
+				<div class="loader-circle"></div>
+				<div class="loader-text">DESIGN BY RTS MEXICO | mxrts.com</div>
+
+			</div>
+
+		</div>
+
+		<button class="open-menu-mobile">
+			<i class="icon ion-navicon-round opening-menu"></i>
+			<i class="icon ion-close-round closing-menu display-none"></i>
+		</button>
+
+		<div id="navigation" class="mobile-nav animated-middle">
+
+			<ul class="main-navigation">
+
+				<li>
+					<a class="nav-link-close">
+						<i class="icon ion-ios-home-outline"></i>
+						Home
+					</a>
+				</li>
+
+
+			</ul> <!-- CLOSE Main nav -->
+
+			<ul class="bottom-nav">
+
+				<li class="twitter-color">
+					<a href="#" title="">
+						<i class="icon ion-social-instagram-outline"></i>
+						Instagram
+					</a>
+				</li>
+
+				<li class="facebook-color">
+					<a href="#" title="">
+						<i class="icon ion-social-facebook-outline"></i>
+						Facebook
+					</a>
+				</li>
+
+			</ul> <!-- CLOSE .bottom-nav -->
+
+		</div> <!-- CLOSE #navigation -->
+
+		<section id="home-part" class="scale-max">
+
+			<div class="overlay">
+				<canvas id="constellation"></canvas>
+			</div>
+
+			<div class="item-title text-center animated-quick">
+
+				<!-- Your logo -->
+				<img src="img/test_logo1.png" alt="" class="brand-logo"/>
+
+				<div id="countdown_dashboard">
+
+					<h1 class="text-news">$nombre  </h1>
+					<p style="font-size:170%;">$bebida </p>
+
+
+					<div class="row">
+						<!-- Days -->
+	                    <div class="col-md-3 col-sm-3 col-xs-3 dash-glob first-dash-glob">
+
+	                    </div>
+	                    <!-- Minutes -->
+	                    <div class="col-md-3 col-sm-3 col-xs-3 dash-glob">
+	                        <div class="dash minutes_dash">
+	                            <div class="digit">0</div>
+	                            <span class="text-right">Minutes</span>
+	                        </div>
+	                    </div>
+	                    
+	                    <!-- Seconds -->
+	                    <div class="col-md-3 col-sm-3 col-xs-3 dash-glob">
+	                        <div class="dash seconds_dash">
+	                            <div class="digit">0</div>
+	                            <div class="digit">0</div>
+	                            <span class="text-right">Seconds</span>
+	                        </div>
+	                    </div>
+
+	                </div>
+								                        
+				</div> <!-- .countdown_dashboard -->
+
+				<a class="btn open-newsletter btn-color">Promociones
+				</a>
+
+				<a class="btn open-content btn-light about-content">Recoger bebida</a>
+				
+			</div> <!-- CLOSE item-title -->
+
+		</section> <!-- CLOSE #home-part -->
+
+		<section id="content-part">
+
+			<div id="main-about">
+
+				<div class="item-title">
+
+					<h1 class="cd-headline letters rotate-2">
+						Recoge&nbsp;tu&nbsp;Bebida
+
+						<div class="cd-words-wrapper">
+
+							<b class="is-visible">Escanea&nbsp;tu&nbsp;QR!</b> <!-- use the code &nbsp; to add a space between 2 words -->
+							<b>Recoge</b>
+							<b>Disfruta</b>
+
+						</div>
+
+					</h1>
+
+		    	</div>
+
+	    	</div>
+			
+		</section> <!-- CLOSE #content-part -->
+
+		<section id="newsletter-part" class="opacity-0 newsletter-touch">
+
+			<div class="item-title text-center animated-quick">
+				
+				<h1 class="newsletter-title">Registrate</h1>
+
+				<p>Para recibir codigos de descuento </p>
+
+				<!-- OPEN - Newsletter part -->
+				<div id="subscribe">
+
+	                <!-- OPEN - Newsletter form -->
+	                <form action="php/notify-me.php" id="notifyMe" method="POST">
+
+	                    <div class="form-group">
+
+	                        <div class="controls">
+	                            
+	                        	<!-- Field  -->
+	                        	<input type="text" id="mail-sub" name="email" placeholder="Ingresa tu email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'email'" class="form-control email srequiredField" />
+
+	                        	<i class="fa fa-spinner opacity-0"></i>
+
+	                            <!-- Button  -->
+	                            <button class="btn btn-lg submit">Enviar</button>
+
+	                            <div class="clear"></div>
+
+	                        </div>
+
+	                    </div>
+
+	                </form> <!-- CLOSE - Newsletter form -->
+
+					<!-- OPEN - Newsletter message -->
+					<div class="block-message">
+
+						<div class="message">
+
+							<p class="notify-valid"></p>
+
+						</div>
+
+					</div> <!-- CLOSE - Newsletter message -->
+
+        		</div> <!-- CLOSE - Newsletter part -->
+
+			</div>
+
+		</section> <!-- CLOSE #newsletter-part -->
+
+		<!-- Language selection -->
+
+
+		<!-- Copyright -->
+		<p class="copyright">©Developed by mxrts.com</p>
+
+
+	<!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
+    <!-- ********** Resources jQuery ********** -->
+    <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
+	
+	<!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easings.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	
+	<!-- Countdown plugin -->
+	<script src="js/countdown.js"></script>
+
+	<!-- Newsletter plugin -->
+	<script src="js/notifyMe.js"></script>
+
+	<!-- Contact form plugin -->
+	<script src="js/contact-me.js"></script>
+
+	<!-- Swipebox plugin -->
+	<script src="js/jquery.swipebox.js"></script>
+
+	<!-- Text rotator plugin -->
+	//<script src="js/animated-headlines.js"></script>
+
+
+	<!-- Scroll plugin -->
+	<script src="js/jquery.mousewheel.js"></script>
+
+	<!-- Constellation plugin -->
+	<script src="js/constellation.js"></script>
+
+	<!-- Slideshow plugin -->
+	<script src="js/vegas.js"></script>
+
+	<!-- Custom Scrollbar plugin -->
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+
+	<!-- Main JS File -->
+	<script src="js/main.js"></script>
+	
+	<!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
+
+	</body>
+
+</html>

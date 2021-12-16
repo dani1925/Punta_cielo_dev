@@ -1,0 +1,25 @@
+
+#-----CODIGO CORRIENTO EN SEGUNDA CUERDA----------------------------        
+def escaneo(window):
+    logging.info("Thread 1 corriendo")
+    logging.info("Iniciando Escaneo")
+    leer_ticket()
+    new_num = Num_Ticket
+    print("Codigo recibido de funcion ",new_num)     
+    logging.info("Tratando de cerrar venta 1")
+    window.destroy()    
+    logging.info("Ventana Destruida") 
+    logging.info("Apsando arg para ventana 2")
+    return Num_Ticket
+
+def leer_ticket():
+    logging.info("Dentro de funcion leer ticket ")
+    ser.flush()
+    Num_Ticket = ser.read(3)
+    Num_Ticket= Num_Ticket.decode("utf-8")
+    if Num_Ticket !="5":
+            print("codigo no valido", Num_Ticket)
+            leer_ticket()
+    elif Num_Ticket == "5":
+            logging.info("Codigo correcto")            
+            return Num_Ticket
